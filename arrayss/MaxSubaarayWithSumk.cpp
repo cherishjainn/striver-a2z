@@ -1,5 +1,5 @@
 int longestSubarray(vector<int>& arr, int k) {
-    int left = 0, sum = 0, ans = 0;
+    int left = 0, sum = 0, ans = 0;             /*REMEBER ELEMENTS CAN ONLY BE POSITIVE FOR NEGATIVE SILDIG WIN FAILS!*/
 
     for(int right = 0; right < arr.size(); right++) {
         sum += arr[right];
