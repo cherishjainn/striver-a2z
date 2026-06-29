@@ -1,6 +1,8 @@
 ## LEVEL ORDER TRAVERSAL 
     vector<vector<int>> levelOrder(TreeNode* root) {
         vector<vector<int>> ans;
+        
+        /* rot == null check krne ka yad rkhna 
 
         if (root == NULL)   
             return ans;  /* {}*/
