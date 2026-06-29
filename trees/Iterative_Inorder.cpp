@@ -46,7 +46,7 @@ MISTAKE ==>>>>
        karte hain, taaki poora left ek hi baar traverse h !!!!!
 
  SOL ==> isliye hum purre time curr node ko leke chalenge jo direct hume batayega ki humari current node ki situation ky hai
-         agar curr null ko hoga tho usse null bhi kregenge usse muzhe malum pad jayegi ki MUZHE RIGHT JANA HAI AUR FIR ME LEFT ME MOVE KRNE KE LIYE WHILE LOOP NHI LAGUNGA 
+         agar curr , null  hoga tho usse null bhi kregenge usse muzhe malum pad jayegi ki MUZHE RIGHT JANA HAI AUR FIR ME LEFT ME MOVE KRNE KE LIYE WHILE LOOP NHI LAGUNGA 
          aur bina loop lageya direct curr ko stack ke next top elemne tke equal krke uska right nikalunga ... 
 
 
