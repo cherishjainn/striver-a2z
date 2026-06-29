@@ -33,9 +33,9 @@ $$ LOGIC ====>>>
 Brute me hum har node ke liye height nikal kar true/false return kr rhe h aur agr 
 false return hua tho further bool laga rhe the age ke node ke liye ..
         
-** yaha directly height nikate vkt hi agr tu bakctrack soche ka tho last
+** yaha directly height nikalte vkt hi agr tu bakctrack soche Ga tho last
 se start krtue hue kahi bhi condition fulfill nhi hui tho -1 RETURN KR RHE 
-THE aur ek abr -1 return hone ke bad we have kept a cond. in line 50..
+THE aur ek abr -1 return hone ke bad we have kept a cond. in line 50.. jisse continuoulsy -1 hi return hota rhega !!
       
 TC - O(N)      
 
