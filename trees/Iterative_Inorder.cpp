@@ -16,7 +16,7 @@ vector<int> inorderTraversal(TreeNode* root) {
 
         ans.push_back(curr->val);
 
-        curr = curr->right;
+        curr = curr->right; /* abb right ka apna kudh ka subtree ayega vo kudh se handle ho jayega */
     }
 
     return ans;
