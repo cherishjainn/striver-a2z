@@ -39,11 +39,13 @@ ab Right jao
 
     
 MISTAKE ==>>>>
-    ** first do not take condition in while loop or if else on basis of CURR->LEFT OR CURR->RIGHT  
-       for ex.. if you take while(curr->left!=NULL) when we move upward after taking left , loop will again start ..
-        Isliye standard solution me hum:
-       while(curr != NULL){  st.push(curr); curr = curr->left;  }
-       karte hain, taaki poora left ek hi baar traverse h !!!!!
+    ** abhi bhi while ya if ki condition curr->left ya curr->right par mat lagao.
+For example, agar tum while(curr->left != NULL) use karte ho, to jab hum left subtree se wapas upar aayenge, tab loop fir se galat tarike se execute ho sakta hai.
+Isliye standard solution mein hum node ke left/right par nahi, balki poore current pointer par check lagate hain:
+while(curr != NULL){
+    st.push(curr);
+    curr = curr->left;
+}
 
  SOL ==> isliye hum purre time curr node ko leke chalenge jo direct hume batayega ki humari current node ki situation ky hai
          agar curr , null  hoga tho usse null bhi kregenge usse muzhe malum pad jayegi ki MUZHE RIGHT JANA HAI AUR FIR ME LEFT ME MOVE KRNE KE LIYE WHILE LOOP NHI LAGUNGA 
