@@ -1,7 +1,11 @@
 ##BRUTE APPROACH ----->>> TC ~ O(N^2) {IN WORST CASE WE WILL BE CHEKCING EVERY NODE FOR BOOL AND
                                       CALCULATING HEIGHT AT EVERY NODE [SWEQ TREE]
 
+$$approach ==>> 
+ ** current node ke liye leftheight righheight ki condition check kr
+ **Agr fulfill nhi hui tho next pe move kr ja for that agin write bool left , right !!
 
+                                        
 int dfsheight(TreeNode* root){
         if(root == NULL) return 0;
         int leftheight = dfsheight(root->left);
