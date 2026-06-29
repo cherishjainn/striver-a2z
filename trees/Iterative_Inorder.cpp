@@ -29,7 +29,8 @@ LOGIC====>>
 Ab left khatam ho gaya. 
 next step=>Ab stack se nikalo:
 Pop 4
-ans = [4]  /*let 4 be last root before left is null,
+ans = [4]  
+    let 4 be last root before left is null,
 
 Ab inorder ke hisaab se:
 Left ho gaya
