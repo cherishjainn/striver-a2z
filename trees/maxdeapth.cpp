@@ -4,3 +4,8 @@
         int rightheight = maxDepth(root->right);
         return 1+max(leftheight,rightheight);
     }
+
+TC - O(N) 
+SC - O(N)  
+
+** jab recusrion likh rha h tho soch mera function muzhe vo required chij de dega ye man ke aage bad aur bas base condtiton likh de 
