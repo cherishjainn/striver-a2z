@@ -1,3 +1,7 @@
+@@ A Balanced Binary Tree woh tree hota hai jisme har node
+ke left aur right subtree ki heights ka difference 1 se zyada nahi hota.
+
+
 ##BRUTE APPROACH ----->>> TC ~ O(N^2) {IN WORST CASE WE WILL BE CHEKCING EVERY NODE FOR BOOL AND
                                       CALCULATING HEIGHT AT EVERY NODE [SWEQ TREE]
 
