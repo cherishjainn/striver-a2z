@@ -9,8 +9,8 @@ se pure tree pe ghuma aur null pe rok de agr leaf tk hi lena h tho bhi pura
 hi move kr bas condition lga dena leaf pe rukne ki !!!!!
 
     **Leaf boundary ke liye tree ko pura traversal krna padega but hum
-vo hi root/node lene h throughout jo ki leaf ho aur pahele left ayega fir right 
-boundary me so use postorder/inorder and bas rather than push every root vo hi root lena jo leaf ho 
+vo hi root/node lene h throughout jo ki leaf ho aur pahele left ayega fir right , 
+boundary me so use postorder/inorder and bas rather than push every root IN POSTORDER  vo hi root lena jo leaf HAI IF KI CONDITION LGA DENA  
 
 
 IMP EDGE CASES :
