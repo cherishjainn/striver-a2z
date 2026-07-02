@@ -1,13 +1,13 @@
-## INSERTING ELEMENTS OF ONE DATA STRUCT. TO VECTOR ARRAY ;-
+TO INSERT ELEMENTS OF ONE DATA STRUCTURE TO ANY OTHER SAME OR DIFF KIND OF DATA STRUCTURE ********
 
-##syntax ==>>> ans.insert(position,first_iterator,last_iterator); 
+##syntax ==>>> ans.insert(position,first_iterator,last_iterator); //position - kaha se start krna hai
 OR
 destination.insert(source.begin(), source.end());
 OR
 ya agar destination vector hai:
 destination.insert(destination.end(),
                    source.begin(),
-                   source.end())
+                   source.end())                               //// VERY IMPORTANT 
 
 ✅ vector ↔ vector
 ✅ set ↔ vector
