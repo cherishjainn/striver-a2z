@@ -12,4 +12,13 @@ YOU CAN USE THIS TEST CASE TO DRY RUN
 
 
 ##very imp ##generally a imp edge case !!!!
-always take the test case in which there is no rigth side or left side and extended the other side or do whatevery you want 
+always take the test case in which there is no rigth side or left side and extended 
+the other side or do whatevery you want 
+EX:-
+        6
+         \
+          2
+         / \
+        8   3
+       /
+      4
