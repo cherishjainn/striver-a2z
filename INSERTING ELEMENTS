@@ -1,0 +1,90 @@
+TO INSERT ELEMENTS OF ONE DATA STRUCTURE TO ANY OTHER SAME OR DIFF KIND OF DATA STRUCTURE ********
+
+https://chatgpt.com/c/6a461547-23ec-83e8-a561-6e03081d9323
+
+##syntax ==>>> ans.insert(position,first_iterator,last_iterator); //position - kaha se start krna hai
+OR
+destination.insert(source.begin(), source.end());
+OR
+ya agar destination vector hai:
+destination.insert(destination.end(),
+                   source.begin(),
+                   source.end())                               //// VERY IMPORTANT 
+
+✅ vector ↔ vector
+✅ set ↔ vector
+✅ map ↔ map
+✅ map → vector<pair<>>
+✅ unordered_set → vector
+✅ multiset → vector
+
+EXAMPLES :-
+1.
+  vector<int> v1 = {1, 2, 3};
+    vector<int> v2 = {4, 5, 6};
+
+    v1.insert(v1.end(), v2.begin(), v2.end());
+
+    for (auto x : v1)
+        cout << x << " ";
+}
+
+Output:
+
+1 2 3 4 5 6
+
+
+2. Map → Vector
+map<int,int> mp = {{1,10}, {2,20}, {3,30}};
+
+vector<pair<int,int>> v;
+v.insert(v.end(), mp.begin(), mp.end());
+
+Output:
+
+v = {{1,10}, {2,20}, {3,30}}
+
+
+
+
+3. Map → Set
+map<int,int> mp = {{1,10}, {2,20}, {3,30}};
+
+set<pair<int,int>> st;
+st.insert(mp.begin(), mp.end());
+
+Output:
+
+st = {(1,10), (2,20), (3,30)}
+
+
+
+
+4. Set → Vector
+set<int> st = {1,2,3};
+
+vector<int> v;
+v.insert(v.end(), st.begin(), st.end());
+
+
+
+
+5. Vector → Set
+vector<int> v = {1,2,2,3,1};
+
+set<int> st;
+st.insert(v.begin(), v.end());
+
+Output:
+
+st = {1,2,3}   // duplicates remove ho gaye
+
+
+
+
+
+6. Map → Another Map
+map<int,int> mp1 = {{1,10}, {2,20}};
+map<int,int> mp2;
+
+mp2.insert(mp1.begin(), mp1.end());
