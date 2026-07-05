@@ -86,4 +86,6 @@ TC - O(N);
 sc - O(1) ; 
         
 
-        
+A SLIGTH VARIATION  ---->>>>> https://www.geeksforgeeks.org/problems/geek-jump/1
+
+
