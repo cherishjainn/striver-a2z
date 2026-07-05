@@ -1,0 +1,8 @@
+WAYS TO DO DP QESTION 
+1. Try to represent any problems in terms of index
+2. Do all possible stuffs on that index, according to the problem statement
+3. Sum of all stuffs ->count all the ways , min(of all stuffs) -> Find min
+
+
+HOW TO KNOW IF ITS DP 
+** if we have to find all possible ways or count various things a recursion is required in a sense dp is required 
