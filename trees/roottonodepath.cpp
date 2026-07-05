@@ -8,6 +8,9 @@ you can use true false concept and if you revceived true means you find path
  if you get false then it means at evry step from end to that point you must have got false 
 so we have written a line of pop back and return false after doing if condition did not work !!!! 
 
+$$$$$ tip : true false me pop back krne vale chij end me hi likhna 
+pahele recusrion krlena kyoki think in end of rrecusrion in last call  if we got true then everthing fine we will subsequently return true  but if we recieve false in last  from leaf node  menas true thing does not work 
+
 
 bool getPath(TreeNode* root, int x, vector<int>& path) {
     if (root == NULL) return false;
@@ -23,7 +26,7 @@ bool getPath(TreeNode* root, int x, vector<int>& path) {
     if (getPath(root->left, x, path) || getPath(root->right, x, path))
         return true;
 
-    // let say you got true from 
+   
     // Backtrack: remove current node
     path.pop_back();
 
