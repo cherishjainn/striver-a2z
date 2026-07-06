@@ -89,6 +89,7 @@ sc - O(1) ;
 A SLIGTH VARIATION  ---->>>>> https://www.geeksforgeeks.org/problems/geek-jump/1
 more variation *** --->>>https://takeuforward.org/data-structure/dynamic-programming-frog-jump-with-k-distances-dp-4  (read th eosl written by me in tuf editor )
 
-        
+SIMILAR PROBLEM -- https://leetcode.com/problems/house-robber/ 
+        just instead of frog jump in above question they have said money robbed when we are at n we can rob till n-2 then rob n or rob n-1 , return max of them 
 
 
