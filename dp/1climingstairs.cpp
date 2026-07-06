@@ -85,6 +85,9 @@ which we will update by iterating over the loop and eventually move curr to nth 
 TC - O(N);
 sc - O(1) ; 
         
+*****NOTE -> JO BHI CHIJ RECURION KE THROUGH HUM KISI INDEX KE LIYE NIKAL RHE H 
+USSE dp[i] STORE KR LETA HAI MEMO KE UNDER ISS AS REUIREMENT AUR JAISE JAISE FUNCTION ATTE HAI STORE HOTE H BUTT TSBULAR ME BOTTOM SE CHALO HOKAR YAHI STORE KI MADA SE HI NTH KE LIYE ANSWER NIKAL THE H 
+
 
 A SLIGTH VARIATION  ---->>>>> https://www.geeksforgeeks.org/problems/geek-jump/1
 more variation *** --->>>https://takeuforward.org/data-structure/dynamic-programming-frog-jump-with-k-distances-dp-4  (read th eosl written by me in tuf editor )
