@@ -62,3 +62,8 @@ beaucse lets suppose islands ke kisi bhi element se i have started bfs then duri
         }
         return count ;
     }
+
+
+NOTE ==>> A SLIHGHT IMPROVEMENT YOU CAN MAKE IS INSTEAD OF USING VISITED MATRIX YOU CAN CHANGE THE GRID[I][J] TO '0' 
+ AT THAT INSTANT THEN WE WILL ONLY CONSIDER THOSE CELL WHICH ARE '1' 
+ THIS WILL IMPROVE SC 
