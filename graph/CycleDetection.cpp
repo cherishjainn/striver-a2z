@@ -79,3 +79,7 @@ TC - O(V)//CONNECTED COM. + O(V+2E)//BFS
       }
       return false ;
   }
+
+
+SC - O(N) + O(N) // recursion space + visit 
+TC - O(V+2E) + O(N) // dfs + for loop for connected component 
