@@ -1,5 +1,6 @@
  
 https://www.geeksforgeeks.org/problems/detect-cycle-in-an-undirected-graph/1
+
 CONCEPT ---->>>  If you visit a vertex that's already visited AND it's not your parent → cycle!
 
  **In an undirected graph, every edge is present in both directions. So, when we move from parent → node, we will always see the parent again in the node's adjacency list
@@ -11,6 +12,7 @@ then that neighbour has been reached through another path from the
 
 
  $$  **source node ke parent ko -1 bol dena beacuse vo starting point ya reference h hamara $$
+
 
 bool bfs(int start  , vector<vector<int>> &adjlist , vector<int> &visit){
       queue<pair<int,int>> q;
@@ -54,3 +56,5 @@ bool bfs(int start  , vector<vector<int>> &adjlist , vector<int> &visit){
         }
         return false;
     }
+
+TC - O(V)//CONNECTED COM. + O(V+2E)//BFS
