@@ -22,6 +22,6 @@ Use a for loop of queue.size() to process one BFS level at a time;
 0 - WHEN NO FRESH ORANGES PRESENT
  for that hum intially queue me rotten wale ko dalte vkt hi fresh ka count rkh lenge and if countOffresh ==  0 after ending loop  return 0
 
--1 - when not all 1's are reachable thorugh adjancey  and one or more 1 does not become rotten in end
- for that jab queue wale loop me if(..==1) wali condition satisfy hogi tho countOffresh -- kr denge 
+-1 -If some fresh oranges can never be reached, they will never become rotten.
+ for that jab queue wale loop me, size wale me if(n&& ..==1) wali condition satisfy hogi tho countOffresh-- kr denge 
 aur end me  agr ye count != 0 hua means return -1       
