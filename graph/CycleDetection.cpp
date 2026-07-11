@@ -58,3 +58,24 @@ bool bfs(int start  , vector<vector<int>> &adjlist , vector<int> &visit){
     }
 
 TC - O(V)//CONNECTED COM. + O(V+2E)//BFS
+
+
+ ## USING DFS 
+ THIS CAN BE DONE USING DFS AS WELL
+ THESE ARE JSUT METHOD OF TRAVERSAL 
+ OUR LOGIC IS SAME IF ADJACENT NODE IS ALREADY VISTED AND IT IS NOT PARENT THEN
+ HOW IT IS VISITED? --> BEACUSE IT IS ALREADY REACHED BY SOURCE NODE SOMEHOW AND  BECAME  A PART OF PATH ALREADY
+
+ bool dfs(int node,int parent ,vector<vector<int>> &adjlist , vector<int> &visit){
+      visit[node]  = 1;
+      for(auto neighbour : adjlist[node]){
+          if(!visit[neighbour]){
+              visit[neighbour] = 1;
+              if(dfs(neighbour,node,adjlist,visit)) return true ;
+          }
+          else if(neighbour!=parent){
+              return true ;
+          }
+      }
+      return false ;
+  }
