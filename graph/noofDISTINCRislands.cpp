@@ -17,6 +17,11 @@ HOW TO STORE STRUCTUE ????? //IMPORTSANT
 so for any particular island keep the statrting cell(while iterating over grid the cell which you first reached) 
 of that islands  as base cell and in that island subtact row,column of each cell with the base/starting cell of *that* island !!!
 
+TC - n*m + 4*n*m + log(n*m) 
+ // outer loop traversing grid +
+   in dfs total recursing 4 direction of n*m elemnets +
+   set ka insertion ->log(set size)
+
 Example
 
 Suppose the grid is:
