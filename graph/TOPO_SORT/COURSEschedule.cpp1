@@ -1,0 +1,14 @@
+
+https://leetcode.com/problems/course-schedule/solutions/7298103/bfs-dfs-approach-explained-kahns-algorit-so9p/
+
+https://www.geeksforgeeks.org/problems/course-schedule-i/1
+
+
+Diff course ka order ha iss pahele ye krna hoga you can see them as directed grpah course x --> course y !!
+Diff courses ka ek order ya kisi x se pahele y,z.. krne padenge y se pahele u aur z se  pahelee y aur u .. in this sense
+aur agr me in sabko ek order me bitha pau ek pahele u y z x like this it means true it is possible 
+aur agr bich me cycle aa gaye like for x do y for y do  for z do x then return false;
+
+approach 1 : use dfs to detect cycle in directed graph and return false if  graph
+
+approcach 2 : use kahn algo and if no o f ele in topo array is total course then return true otherwise false this will also handle 2nd part of this question 
