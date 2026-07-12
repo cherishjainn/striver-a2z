@@ -1,5 +1,12 @@
 "https://www.geeksforgeeks.org/problems/detect-cycle-in-a-directed-graph/1"
 
+
+
+"NOTE :- Directed graph me cycle tabhi hota hai jab current path me kisi purane node par wapas aa jao jo ussi path ka hai (a back edge).
+ Agar node sirf visited hai lekin current path me nahi hai, to woh kisi dusri branch se visit hua tha    !!"
+
+
+
 LOGIC ==>>
 we cannot use method of undirected graph becuase in that we only use the concept that if a node is previously visited and not the parnent node it means we've completed the cycle
 or If during this process, we reach a node that we’ve already visited in the same DFS path, it means we’ve gone back to an ancestor -cycle!
@@ -12,9 +19,6 @@ SO IN DIRECTED WE REUIRED TWO VECTORS - VSIT ( TO KEEP TRACK OF VISITED ELEMENT)
                                         PATHVISIT (TO KEEP TRACK OF ELEMENT IN MY EXISITNG PATH )
                                         And if i find a elemnt that is visited and is also in my path then i ve got the cycle !!
 
-
-NOTE :- Directed graph me cycle tabhi hota hai jab current path me kisi purane node par wapas aa jao (a back edge).
- Agar node sirf visited hai lekin current path me nahi hai, to woh kisi dusri branch se visit hua tha    !!
  
   
   bool dfs(int start ,vector<vector<int>> &adjlist , vector<int> &visit , vector<int> &pathv){
