@@ -59,7 +59,28 @@ Yaani unnecessary recomputation bahut zyada ho jayegi.
 SETS:::--->>>
 
 Now if we use sets if at same time for a node mutliple ditsnacce are present it will keep the smallest distance vala becuae hum {dist,node} pass krenge 
- 
+
+
+
+
+very importsnt ::: APAN P
+"IF YOU POP ANY {DIST,NODE} THEN THAT DIST IS FINAL DIST FOR THAT NODE " BECUASE 
+if we are popping means its dist is smallest currently in set AUR TU SOCH RHA H AGR AAGE JAK SMALLER DITSNCE MIL JAYE BUT YE POSSIBLE NHI H 
+ex:
+ the priority queue contains something like:
+(5, B)
+(8, C)
+(10, D)
+...
+Since its a min-heap, 5 is the smallest distance among all unprocessed nodes.Suppose B is popped with distance = 5
+To reach B later, you must come through some other node X.
+
+Source -----> X -----> B
+But notice:
+B was popped with distance 5.
+Since B was the smallest in the PQ, every unprocessed node X has distance ≥ 5. AUR FIR B TAK KE LIYE TUZHE X ME KUCH ADD KRNA HOGA 
+
+AUR SINCE B KA FINALHO GYA IT MEANS B KE 
 
 
 
@@ -92,8 +113,6 @@ Now if we use sets if at same time for a node mutliple ditsnacce are present it 
         
         //agr node ke pass ane ka laready chota rasta ha tho leave this path 
         if(distance>dist[node]) continue ;
-
-        // NOTE --> THIS IF CONSITION IS NOT RQUIRED IN SET APPROACH BEACUSE IN SET ONLY ONE COPY OF NODE IS PRESENT WHICH IS MINIMUM TILL THAT TIME 
         
         for(auto neigh : adj[node]){
          int edgeWeigh = neigh.second;
@@ -112,10 +131,7 @@ Now if we use sets if at same time for a node mutliple ditsnacce are present it 
 
 
     USING SETS ===>
-
-    	last ka part rest same 
-
-
+	
 		st.insert({0, src});
 		while (!st.empty()) {
 			auto [distance, node] = *st.begin();
